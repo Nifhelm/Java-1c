@@ -16,5 +16,4 @@ public class main {
 }
 
 
-12121
-
+1
