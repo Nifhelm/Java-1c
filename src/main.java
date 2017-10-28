@@ -29,12 +29,20 @@ class Panel extends JPanel {
         drawHouse(g, house_x, house_y, Color.RED);
 
 
-        if (house_x<601) {
-            house_x +=5;
+        if (house_x < 750 && house_y == 150) {
+                house_x +=5;
+
         }
 
-        if (house_x == 600) {
-            house_x -=8;
+        else  {
+                house_x -=5;
+                house_y +=5;
+        }
+
+
+        if (house_x > 500 && house_y > 200) {
+            house_x -=5;
+            house_y -=5;
         }
     }
 }
